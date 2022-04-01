@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pong Game</title>
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .table {
+                background-color: black;
+                width: 800px;
+                height: 400px;
+            }
+
+            .pad {
+                position: absolute;
+                background-color: white;
+                height: 0px;
+                width: 20px;
+            }
+
+            .ball {
+                position: absolute;
+                background-color: white;
+                height: 30px;
+                width: 30px;
+
+                border-radius: 50%;
+            }
+
+            .info {
+                width: 800px;
+            }
+
+            .info-row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 12px;
+            }
+
+            .score, .total-score {
+                font-size: 34px;
+            }
+
+            .message {
+                font-size: 24px;
+                text-align: center;
+            }
+        </style>
+
+        <script src="game.js"></script>
+    </head>
+
+    <body>
+        <div class="table">
+            <div id="pad1" class="pad"></div>
+            <div id="pad2" class="pad"></div>
+            <div id="ball" class="ball"></div>
+        </div>
+
+        <div class="info">
+            <div class="info-row">
+                <div id="score1" class="score"></div>
+                <div id="total-score" class="total-score"></div>
+                <div id="score2" class="score"></div>
+            </div>
+            <div class="info-row">
+                <div></div>
+                <div id="message" class="message"></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
